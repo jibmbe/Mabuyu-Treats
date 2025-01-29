@@ -1,0 +1,172 @@
+.checkout {
+    padding: 40px;
+    max-width: 850px;
+    margin: 40px auto;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+.checkout:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.checkout h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.order-summary,
+.payment-info,
+.contact-info,
+.confirmation {
+    margin-bottom: 35px;
+    padding: 20px;
+    border-radius: 8px;
+    background: #fafafa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.order-summary h2,
+.payment-info h2,
+.contact-info h2,
+.confirmation h2 {
+    color: #222;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e67e22;
+    padding-bottom: 8px;
+}
+
+.order-items {
+    margin-bottom: 20px;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1rem;
+}
+
+.order-item:last-child {
+    border-bottom: none;
+}
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #e67e22;
+    padding: 10px 0;
+}
+
+.payment-info h3 {
+    font-size: 1.6rem;
+    color: #e67e22;
+    margin: 12px 0;
+    font-weight: bold;
+}
+
+.payment-info p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.contact-btn,
+.confirm-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #e67e22, #d35400);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover,
+.confirm-btn:hover {
+    background: linear-gradient(135deg, #d35400, #e67e22);
+    transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .checkout {
+        padding: 25px;
+        margin: 20px;
+    }
+
+    .checkout h1 {
+        font-size: 1.8rem;
+    }
+
+    .order-summary h2,
+    .payment-info h2,
+    .contact-info h2,
+    .confirmation h2 {
+        font-size: 1.4rem;
+    }
+
+    .order-item {
+        flex-direction: column;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .order-total {
+        font-size: 1.2rem;
+    }
+
+    .contact-btn,
+    .confirm-btn {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .checkout {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .checkout h1 {
+        font-size: 1.6rem;
+    }
+
+    .order-summary h2,
+    .payment-info h2,
+    .contact-info h2,
+    .confirmation h2 {
+        font-size: 1.2rem;
+    }
+
+    .order-item {
+        font-size: 0.9rem;
+    }
+
+    .order-total {
+        font-size: 1rem;
+    }
+
+    .contact-btn,
+    .confirm-btn {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}

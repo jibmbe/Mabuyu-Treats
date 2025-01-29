@@ -1,0 +1,100 @@
+.admin-orders {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.admin-orders h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.orders-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.orders-table th,
+.orders-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.orders-table th {
+    background: #f4a261;
+    color: white;
+    font-weight: bold;
+}
+
+.orders-table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.orders-table tr:hover {
+    background: #f4f4f4;
+}
+
+.orders-table p {
+    margin: 5px 0;
+}
+
+.no-orders {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    margin-top: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .admin-orders {
+        padding: 15px; /* Reduce padding for smaller screens */
+        margin: 20px; /* Adjust margin for better fit */
+    }
+
+    .orders-table th,
+    .orders-table td {
+        padding: 8px; /* Reduce padding for smaller screens */
+    }
+
+    .orders-table th {
+        font-size: 0.9rem; /* Reduce font size for table headers */
+    }
+
+    .orders-table td {
+        font-size: 0.9rem; /* Reduce font size for table data */
+    }
+
+    .no-orders {
+        font-size: 16px; /* Adjust font size for no orders message */
+    }
+}
+
+@media (max-width: 480px) {
+    .admin-orders {
+        padding: 10px; /* Further reduce padding for very small screens */
+        margin: 10px; /* Adjust margin for very small screens */
+    }
+
+    .orders-table th,
+    .orders-table td {
+        padding: 6px; /* Reduce padding further */
+    }
+
+    .orders-table th {
+        font-size: 0.8rem; /* Further reduce font size for table headers */
+    }
+
+    .orders-table td {
+        font-size: 0.8rem; /* Further reduce font size for table data */
+    }
+
+    .no-orders {
+        font-size: 14px; /* Further reduce font size for no orders message */
+    }
+}

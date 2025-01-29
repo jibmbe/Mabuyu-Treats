@@ -1,0 +1,452 @@
+/* Home.css */
+.home {
+    font-family: 'Lora', serif;
+    color: #333;
+}
+
+.hero {
+    position: relative;
+    height: 600px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), #f39c12;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+    transition: background 0.5s ease-in-out;
+}
+
+.hero .carousel-text h1 {
+    font-family: 'Plafair', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.hero .carousel-text p {
+    font-family: 'Lora', serif;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero .shop-now-btn {
+    padding: 12px 24px;
+    background-color: #f39c12;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero .shop-now-btn:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-text h1 {
+    font-family: 'Plafair', sans-serif;
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.shop-now-btn {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.shop-now-btn:hover {
+    background-color: #e67e22;
+}
+
+.featured-products h2,
+.best-sellers h2,
+.why-choose-us h2,
+.testimonials h2,
+.special-offers h2,
+.contact-us h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 40px 0;
+    font-family: 'Plafair', sans-serif;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 250px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.why-choose-us {
+    background-color: #f5f5f5;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.why-choose-us h2 {
+    font-size: 2.8rem;
+    color: #333;
+    margin-bottom: 40px;
+    font-family: 'Plafair', sans-serif;
+}
+
+.why-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+.why-card {
+    background-color: #f39c12;
+    color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.why-card:hover {
+    transform: scale(1.05);
+}
+
+.why-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.why-card p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.why-card .fa {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.testimonials {
+    background-color: #ecf0f1;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-family: 'Plafair', sans-serif;
+}
+
+.testimonial-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial-card {
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 350px;
+}
+
+.testimonial-card p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+.testimonial-card strong {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.special-offers {
+    background-color: #f39c12;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.special-offers h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.special-offers p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+.contact-us {
+    background-color: #ecf0f1;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Plafair', sans-serif;
+}
+
+.contact-btn {
+    padding: 10px 25px;
+    background-color: #f39c12;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-btn:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+}
+
+/* Get in Touch Section */
+.get-in-touch {
+    background-color: #f5f5f5;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.get-in-touch:hover {
+    background-color: #ecf0f1;
+}
+
+.get-in-touch h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+    font-family: 'Plafair', sans-serif;
+    letter-spacing: 1px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.get-in-touch h2:hover {
+    transform: translateY(-5px);
+}
+
+.get-in-touch p {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.get-in-touch .contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.get-in-touch .contact-info div {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.get-in-touch .contact-info div:hover {
+    transform: scale(1.05);
+}
+
+.get-in-touch .contact-info div i {
+    font-size: 3rem;
+    color: #f39c12;
+    margin-bottom: 15px;
+}
+
+.get-in-touch .contact-info div h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.get-in-touch .contact-info div p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+.get-in-touch .contact-info div a {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: #f39c12;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.get-in-touch .contact-info div a:hover {
+    color: #e67e22;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    .hero .carousel-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .carousel-text p {
+        font-size: 1.2rem;
+    }
+
+    .shop-now-btn {
+        font-size: 1.1rem;
+        padding: 10px 20px;
+    }
+
+    .product-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .why-choose-us h2,
+    .testimonials h2,
+    .special-offers h2,
+    .contact-us h2 {
+        font-size: 2rem;
+    }
+
+    .why-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .testimonial-card p {
+        font-size: 1.1rem;
+    }
+
+    .contact-btn {
+        font-size: 1.2rem;
+        padding: 10px 25px;
+    }
+
+    .get-in-touch h2 {
+        font-size: 2rem;
+    }
+
+    .get-in-touch p {
+        font-size: 1.3rem;
+    }
+
+    .get-in-touch .contact-info div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero .carousel-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero .carousel-text p {
+        font-size: 1.1rem;
+    }
+
+    .shop-now-btn {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    .product-card {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .why-choose-us h2,
+    .testimonials h2,
+    .special-offers h2,
+    .contact-us h2 {
+        font-size: 1.8rem;
+    }
+
+    .why-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .testimonial-card p {
+        font-size: 1.1rem;
+    }
+
+    .contact-btn {
+        font-size: 1.1rem;
+        padding: 8px 20px;
+    }
+
+    .get-in-touch h2 {
+        font-size: 1.8rem;
+    }
+
+    .get-in-touch p {
+        font-size: 1.2rem;
+    }
+}
+
