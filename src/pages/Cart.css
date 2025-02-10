@@ -1,99 +1,156 @@
+/* Cart Container */
 .cart {
-    text-align: center;
-    padding: 30px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+  text-align: center;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  max-width: 800px; /* Ensures it doesn’t stretch too wide */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Cart List */
+.cart ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Cart Item */
+.cart li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 10px;
+  transition: background-color 0.3s ease;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cart li:hover {
+  background-color: #f1f1f1;
+}
+
+/* Product Image */
+.cart img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Product Info */
+.cart .product-info {
+  flex: 1;
+  text-align: left;
+  min-width: 150px;
+}
+
+/* Product Title */
+.cart .product-info h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+/* Product Description */
+.cart .product-info p {
+  font-size: 1rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+/* Product Price */
+.cart .product-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  min-width: 80px;
+  text-align: right;
+}
+
+/* Remove Button */
+.cart .remove-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart .remove-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cart {
+      padding: 20px;
   }
-  
-  .cart ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
+
   .cart li {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    border-bottom: 1px solid #ddd;
-    padding: 15px 10px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cart li:hover {
-    background-color: #f1f1f1;
-  }
-  
-  .cart img {
-    width: 90px;
-    height: 90px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-  
-  .cart .product-info {
-    flex: 1;
-    text-align: left;
-  }
-  
-  .cart .product-info h3 {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #333;
-    margin: 0;
-  }
-  
-  .cart .product-info p {
-    font-size: 1rem;
-    color: #666;
-    margin: 5px 0;
-  }
-  
-  .cart .product-price {
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .cart .remove-btn {
-    background-color: #e74c3c;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    font-size: 0.9rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cart .remove-btn:hover {
-    background-color: #c0392b;
-  }
-  
-  @media (max-width: 600px) {
-    .cart li {
       flex-direction: column;
       text-align: center;
-    }
-  
-    .cart img {
-      width: 70px;
-      height: 70px;
-    }
-  
-    .cart .product-info h3 {
+      padding: 15px;
+  }
+
+  .cart img {
+      width: 90px;
+      height: 90px;
+  }
+
+  .cart .product-info {
+      text-align: center;
+  }
+
+  .cart .product-price {
       font-size: 1.1rem;
-    }
-  
-    .cart .product-price {
-      font-size: 1.1rem;
-    }
-  
-    .cart .remove-btn {
+      text-align: center;
+  }
+
+  .cart .remove-btn {
       font-size: 0.85rem;
       padding: 6px 12px;
-    }
   }
-  
+}
+
+@media (max-width: 480px) {
+  .cart {
+      padding: 15px;
+  }
+
+  .cart li {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+  }
+
+  .cart img {
+      width: 80px;
+      height: 80px;
+  }
+
+  .cart .product-info h3 {
+      font-size: 1rem;
+  }
+
+  .cart .product-info p {
+      font-size: 0.9rem;
+  }
+
+  .cart .product-price {
+      font-size: 1rem;
+  }
+
+  .cart .remove-btn {
+      font-size: 0.8rem;
+      padding: 6px 10px;
+  }
+}

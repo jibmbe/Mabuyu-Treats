@@ -6,10 +6,10 @@ import { useState, useEffect } from "react";
 
 const products = [
   { id: 1, name: "Small Pack Mabuyu", price: 50, image: mabuyuImg },
-  { id: 2, name: "Medium Pack Mabuyu", price: 100, image: mabuyuImg },
+  { id: 2, name: "Medium Pack Mabuyu", price: 150, image: mabuyuImg },
   { id: 3, name: "Large Pack Mabuyu", price: 200, image: mabuyuImg },
-  { id: 4, name: "Medium Pack Achari", price: 200, image: achariImg },
-  { id: 5, name: "Large Pack Achari", price: 300, image: achariImg }
+  { id: 4, name: "Medium Pack Achari", price: 250, image: achariImg },
+  { id: 5, name: "Large Pack Achari", price: 350, image: achariImg }
 ];
 
 const Home = () => {
