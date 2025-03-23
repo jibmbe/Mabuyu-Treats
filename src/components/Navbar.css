@@ -3,9 +3,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(135deg, #ff4500, #d63031); /* Vibrant gradient */
+    background: linear-gradient(135deg, #ff4500, #d63031);
     padding: 15px 30px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* More depth */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     position: sticky;
     top: 0;
     width: 100%;
@@ -13,25 +13,23 @@
     transition: all 0.3s ease-in-out;
 }
 
-.navbar:hover {
-    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
 }
 
-/* Logo */
-.logo a {
-    color: white;
-    font-size: 26px;
-    font-weight: bold;
-    text-decoration: none;
-    letter-spacing: 1.5px;
+.logo img {
+    max-width: 140px;
+    height: auto;
     transition: transform 0.3s ease;
 }
 
-.logo a:hover {
+.logo img:hover {
     transform: scale(1.05);
 }
 
-/* Nav Links */
+/* Navigation Links */
 .nav-links {
     list-style: none;
     display: flex;
@@ -49,7 +47,7 @@
 }
 
 .nav-links li a:hover {
-    background: rgba(255, 215, 0, 0.2); /* Subtle gold hover effect */
+    background: rgba(255, 215, 0, 0.2);
     color: #ffd700;
     transform: translateY(-2px);
 }
@@ -64,10 +62,6 @@
 
 /* Responsive Navbar for Small Screens */
 @media (max-width: 768px) {
-    .navbar {
-        padding: 12px 20px;
-    }
-
     .menu-icon {
         display: block;
         z-index: 1500;
@@ -113,5 +107,10 @@
     .nav-links li a:hover {
         background: rgba(255, 215, 0, 0.3);
         color: #ffd700;
+    }
+
+    /* Responsive Logo */
+    .logo img {
+        max-width: 120px;
     }
 }

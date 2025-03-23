@@ -1,9 +1,10 @@
 import { useParams } from "react-router-dom";
 import "./ProductDetails.css";
-import mabuyuImg from "../assets/mabuyu.jpg";
+import mabuyuImg from "../assets/mabuyu1.jpeg";
 import achariImg from "../assets/achari.jpeg";
 import { useState, useContext } from "react";
 import { CartContext } from "../context/CartContext";
+
 
 const products = [
   { id: 1, name: "Small Pack Mabuyu", price: 50, image: mabuyuImg, description: "A small pack of delicious mabuyu, perfect for a quick treat." },
